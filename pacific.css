@@ -1,3 +1,14 @@
+/*
+File: pacific.css
+GUI Assignment: Style a Site with External CSS
+Paul Warwick, UMass Lowell Computer Science, paul_warwick@student.uml.edu
+Copyright (c) 2024 by Paul Warwick. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by PW on 5/25/2024 at 6:19 pm.
+
+Description: Styles index.html
+*/
+
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
     display: block;
 }
@@ -16,25 +27,14 @@ body { /* body styling */
     width: 80%;
     min-width: 600px;
     margin: 0 auto;
-    background: linear-gradient(to right, #53b1ce 0,#53b1ce 170px, 0,white 50%,white 100%); /* navbar color extension*/
+    background: linear-gradient(to right, #8ed2e7 0,#8ed2e7 185px, 0,white 50%,white 100%); /* navbar color extension*/
 }
 
-h1 { /* styling main header */
-    margin-bottom: 0;
-    color: white;
-    padding: 10px;
-    background-image: url('sunset.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    width: 100%;
-    font-family: Georgia, "Times New Roman", serif;
-}
+
 
 nav { /* navbar styling */
-    width: 170px;
-    background-color: #53b1ce;
+    width: 185px;
+    background-color: #8ed2e7;
 	background-size: cover;
     float: left;
 	max-height: fit-content;
@@ -45,13 +45,16 @@ nav ul { /* navbar list styling */
     list-style: none;
     padding: 0;
     margin: 0;
+	margin-top: 20px;
+	margin-left: 15px;
 }
 
 nav a { /* navbar link styling */
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 0 10px;
     color: rgb(12, 6, 102);
+	font-weight: bold;
 }
 
 nav a:visited { /* navbar link after visit */
@@ -62,26 +65,39 @@ nav a:hover { /* navbar link after hover */
     color: #FFFFFF;
 }
 
+h1 { /* styling main header */
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+	background-color: #010132;
+    padding: 10px;
+	background-image: url("sunset.jpg");
+    background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
 #content { /* content styling */
-    padding: 20px;
-    margin-left: 190px; /* Adjusted to include the width of the nav */
+    margin-left: 210px; /* Adjusted to include the width of the nav */
 }
 
 #content img { /* image styling */
-	width: 300px;
+	width: 325px;
     float: left;
-    margin-right: 20px;
+    margin-right: 25px;
 	size: 100px;
 }
 
 #content ul { /* content list styling */
     list-style-image: url('marker.gif');
     padding: 0;
+	margin-left: 60px;
+	list-style-position: inside;
 }
 
 .resort { /* resort class styling */
-    color: #53b1ce;
-    font-size: 110%;
+    color: #3b9cb9;
+	font-weight: bold;
 }
 
 h2 { /* header 2 styling */
@@ -99,7 +115,10 @@ dt { /* dt styling */
 
 footer { /* footer styling */
     font-family: Georgia, "Times New Roman", serif;
-    padding: 10px;
-    margin-left: 190px; /* Adjusted to include the width of the nav */
-    margin-top: auto; /* Ensure footer sticks to the bottom */
+	font-style: italic;
+	font-size: smaller;
+    padding-bottom: 30px;
+	padding-left: 10px;
+    margin-left: 195px; /* Adjusted to include the width of the nav */
+    margin-top: 50px; /* Ensure footer sticks to the bottom */
 }
