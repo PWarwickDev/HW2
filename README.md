@@ -16,3 +16,7 @@ Requirement Fulfillment:
 
     - My website is very close to the given images, besides maybe color differences in some areas.
     - I believe this project fulfills all requirements.
+
+Website Link: https://pwarwickdev.github.io/HW2/
+
+Github Repo: https://github.com/PWarwickDev/HW2
